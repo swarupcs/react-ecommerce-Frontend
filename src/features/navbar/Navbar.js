@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, ShoppingCartIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const user = {
   name: 'Tom Cook',
@@ -11,9 +11,6 @@ const user = {
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
@@ -24,7 +21,7 @@ const userNavigation = [
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
-  
+
 function Navbar({children}) {
     return ( 
         <>
@@ -70,7 +67,7 @@ function Navbar({children}) {
                         >
                           <span className="absolute -inset-1.5" />
                           <span className="sr-only">View notifications</span>
-                          <BellIcon className="h-6 w-6" aria-hidden="true" />
+                          <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
                         </button>
   
                         {/* Profile dropdown */}
@@ -159,7 +156,7 @@ function Navbar({children}) {
                       >
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6" aria-hidden="true" />
+                        <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
                       </button>
                     </div>
                     <div className="mt-3 space-y-1 px-2">
