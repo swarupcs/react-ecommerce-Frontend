@@ -8,7 +8,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
-import ProductDetail from './features/product-list/components/ProductDetail';
+import ProductDetail from './features/product/components/ProductDetail';
 import ProductDetailPage from './pages/ProductDetailPage';
 
 import {
