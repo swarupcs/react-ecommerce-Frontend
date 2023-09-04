@@ -9,6 +9,7 @@ import SignupPage from './pages/SignupPage';
 import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
 import ProductDetail from './features/product-list/components/ProductDetail';
+import ProductDetailPage from './pages/ProductDetailPage';
 
 import {
   createBrowserRouter,
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/product-detail",
-    element: <ProductDetail></ProductDetail>,
+    element: <ProductDetailPage></ProductDetailPage>,
   },
 ]);
 
