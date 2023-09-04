@@ -2,12 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
-import ProductList from './features/product-list/ProductList';
+
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
+import ProductDetail from './features/product-list/components/ProductDetail';
 
 import {
   createBrowserRouter,
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/checkout",
     element: <Checkout></Checkout>,
+  },
+  {
+    path: "/product-detail",
+    element: <ProductDetail></ProductDetail>,
   },
 ]);
 
