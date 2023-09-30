@@ -1,12 +1,11 @@
-import Navbar from "../features/navbar/Navbar";
+import NavBar from "../features/navbar/Navbar";
 import ProductDetail from "../features/product/components/ProductDetail";
 function ProductDetailPage() {
     return ( 
         <div>
-            <Navbar>
+            <NavBar>
                 <ProductDetail></ProductDetail>
-            </Navbar>
-
+            </NavBar>
         </div>
      );
 }
